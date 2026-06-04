@@ -17,7 +17,7 @@ const education = [
 ]
 
 const skills = {
-  languages: ["C", "C++", "Java", "HTML", "CSS", "JavaScript", "TypeScript", "PHP", "Python"],
+  languages: ["C", "C++", "Java", "HTML", "CSS", "JavaScript", "TypeScript", "Python"],
   frameworks: ["Next.js", "React", "Node.js", "Tailwind CSS"],
   tools: ["Git", "GitHub", "Render", "Vercel"],
 }
@@ -26,6 +26,7 @@ const certifications = [
   {
     title: "AWS - Solutions Architecture Simulation",
     issuer: "Amazon Web Services",
+    logo: "/logos/aws.png",
     date: "Jul 2025",
     skills: ["Cloud Architecture Design", "AWS Services"],
     color: "from-orange-500 to-yellow-500",
@@ -33,6 +34,7 @@ const certifications = [
   {
     title: "Deloitte - Cyber Job Simulation",
     issuer: "Forage",
+    logo: "/logos/deloitte.png",
     date: "Jul 2025",
     skills: ["Cybersecurity", "Threat & Vulnerability Management"],
     color: "from-green-500 to-emerald-500",
@@ -40,6 +42,7 @@ const certifications = [
   {
     title: "Mastering Generative AI and ChatGPT",
     issuer: "GeeksforGeeks",
+    logo: "/logos/gfg.png",
     date: "Aug 2025",
     skills: ["Prompt Engineering", "Artificial Intelligence", "Machine Learning"],
     color: "from-purple-500 to-pink-500",
@@ -67,8 +70,8 @@ const openSourceContributions = [
 
 const achievements = [
   
-  "Active contributor to university tech community",
-  "Completed multiple industry certifications",
+  "Active Contributor to Open Source communities",
+  "Completed multiple Industry Certifications",
 ]
 
 export default function Portfolio() {
@@ -400,8 +403,12 @@ export default function Portfolio() {
                 className="group p-6 rounded-2xl bg-[#12121a] border border-[#2a2a3a] hover:border-cyan-500/30 transition-all duration-300"
               >
                 <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${cert.color} flex items-center justify-center mb-4`}>
-                  <Award className="h-6 w-6 text-white" />
-                </div>
+  <img
+    src={cert.logo}
+    alt={cert.issuer}
+    className="h-8 w-8 object-contain"
+  />
+</div>
                 <h3 className="font-semibold text-lg mb-1 group-hover:text-cyan-400 transition-colors">{cert.title}</h3>
                 <p className="text-sm text-[#8a8a9a] mb-1">{cert.issuer}</p>
                 <p className="text-xs text-[#6a6a7a] mb-4">{cert.date}</p>
