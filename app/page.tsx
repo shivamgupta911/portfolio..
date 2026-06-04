@@ -26,7 +26,7 @@ const certifications = [
   {
     title: "AWS - Solutions Architecture Simulation",
     issuer: "Amazon Web Services",
-    logo: "/logos/aws.png",
+    logo: "https://cdn.simpleicons.org/amazonaws",
     date: "Jul 2025",
     skills: ["Cloud Architecture Design", "AWS Services"],
     color: "from-orange-500 to-yellow-500",
@@ -34,7 +34,7 @@ const certifications = [
   {
     title: "Deloitte - Cyber Job Simulation",
     issuer: "Forage",
-    logo: "/logos/deloitte.png",
+    logo: "https://cdn.simpleicons.org/deloitte",
     date: "Jul 2025",
     skills: ["Cybersecurity", "Threat & Vulnerability Management"],
     color: "from-green-500 to-emerald-500",
@@ -42,7 +42,7 @@ const certifications = [
   {
     title: "Mastering Generative AI and ChatGPT",
     issuer: "GeeksforGeeks",
-    logo: "/logos/gfg.png",
+     logo: "https://cdn.simpleicons.org/geeksforgeeks",
     date: "Aug 2025",
     skills: ["Prompt Engineering", "Artificial Intelligence", "Machine Learning"],
     color: "from-purple-500 to-pink-500",
@@ -406,7 +406,7 @@ export default function Portfolio() {
   <img
     src={cert.logo}
     alt={cert.issuer}
-    className="h-8 w-8 object-contain"
+    className="h-10 w-10 object-contain"
   />
 </div>
                 <h3 className="font-semibold text-lg mb-1 group-hover:text-cyan-400 transition-colors">{cert.title}</h3>
