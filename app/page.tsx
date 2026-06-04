@@ -29,18 +29,24 @@ const skills = {
 
 const certifications = [
   {
-    title: "AWS Cloud Practitioner",
+    title: "AWS - Solutions Architecture Simulation",
     issuer: "Amazon Web Services",
+    date: "Jul 2025",
+    skills: ["Cloud Architecture Design", "AWS Services"],
     color: "from-orange-500 to-yellow-500",
   },
   {
-    title: "Cyber Job Simulation",
-    issuer: "Deloitte",
+    title: "Deloitte - Cyber Job Simulation",
+    issuer: "Forage",
+    date: "Jul 2025",
+    skills: ["Cybersecurity", "Threat & Vulnerability Management"],
     color: "from-green-500 to-emerald-500",
   },
   {
-    title: "Mastering Generative AI",
+    title: "Mastering Generative AI and ChatGPT",
     issuer: "GeeksforGeeks",
+    date: "Aug 2025",
+    skills: ["Prompt Engineering", "Artificial Intelligence", "Machine Learning"],
     color: "from-purple-500 to-pink-500",
   },
 ]
@@ -403,7 +409,18 @@ export default function Portfolio() {
                   <Award className="h-6 w-6 text-white" />
                 </div>
                 <h3 className="font-semibold text-lg mb-1 group-hover:text-cyan-400 transition-colors">{cert.title}</h3>
-                <p className="text-sm text-[#8a8a9a]">{cert.issuer}</p>
+                <p className="text-sm text-[#8a8a9a] mb-1">{cert.issuer}</p>
+                <p className="text-xs text-[#6a6a7a] mb-4">{cert.date}</p>
+                <div className="flex flex-wrap gap-2">
+                  {cert.skills.map((skill) => (
+                    <span 
+                      key={skill} 
+                      className="px-2 py-1 text-xs bg-[#1a1a24] border border-[#2a2a3a] rounded text-[#a0a0b0]"
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
               </div>
             ))}
           </div>
@@ -438,19 +455,19 @@ export default function Portfolio() {
               </ul>
             </div>
             <div className="p-8 rounded-2xl bg-[#12121a] border border-[#2a2a3a] hover:border-cyan-500/30 transition-all duration-300">
-              <h3 className="font-semibold text-lg mb-6 text-cyan-400">Relevant Coursework</h3>
+              <h3 className="font-semibold text-lg mb-6 text-cyan-400">Professional Development</h3>
               <ul className="space-y-4">
                 <li className="flex items-center gap-4 text-[#a0a0b0]">
                   <span className="w-2 h-2 rounded-full bg-gradient-to-r from-cyan-400 to-blue-500" />
-                  Data Structures & Algorithms
+                  AWS Solutions Architecture
                 </li>
                 <li className="flex items-center gap-4 text-[#a0a0b0]">
                   <span className="w-2 h-2 rounded-full bg-gradient-to-r from-cyan-400 to-blue-500" />
-                  Database Management Systems
+                  Cybersecurity & Threat Management
                 </li>
                 <li className="flex items-center gap-4 text-[#a0a0b0]">
                   <span className="w-2 h-2 rounded-full bg-gradient-to-r from-cyan-400 to-blue-500" />
-                  Computer Networks
+                  Generative AI & Prompt Engineering
                 </li>
               </ul>
             </div>
