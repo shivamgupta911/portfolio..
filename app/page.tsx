@@ -13,12 +13,7 @@ const education = [
     period: "2023",
     grade: "93.0%",
   },
-  {
-    degree: "Class X (ICSE)",
-    institution: "Sacred Heart School, Ballia",
-    period: "2021",
-    grade: "95.0%",
-  },
+  
 ]
 
 const skills = {
@@ -53,7 +48,7 @@ const certifications = [
 
 const experience = [
   {
-    role: "Executive Member",
+    role: "Treasurer",
     organization: "The Editorial Board",
     period: "May 2025 - Present",
     description: "Contributing to editorial initiatives and content management for university publications.",
@@ -71,7 +66,7 @@ const openSourceContributions = [
 ]
 
 const achievements = [
-  "Top performer in Data Structures & Algorithms coursework",
+  
   "Active contributor to university tech community",
   "Completed multiple industry certifications",
 ]
