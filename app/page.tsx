@@ -124,7 +124,7 @@ export default function Portfolio() {
                 </span>
               </h1>
               <p className="text-xl md:text-2xl text-[#8a8a9a] mb-4">
-                Software Engineer
+                Aspiring Software Developer
               </p>
               <p className="text-base text-[#6a6a7a] leading-relaxed max-w-lg mb-8">
                 Building robust, scalable applications with modern web technologies. 
@@ -195,8 +195,7 @@ export default function Portfolio() {
             </div>
             <div className="p-8 rounded-2xl bg-[#12121a] border border-[#2a2a3a] hover:border-cyan-500/30 transition-all duration-300">
               <p className="text-[#a0a0b0] leading-relaxed text-lg">
-                When I&apos;m not coding, I contribute to The Editorial Board at my university and continuously 
-                explore emerging technologies in cloud computing and AI.
+                Alongside my academic journey, I serve as an Executive Member of the Editorial Board, which helps me develop strong techno-managerial, organizational, and interpersonal skills.
               </p>
             </div>
           </div>
