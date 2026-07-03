@@ -26,7 +26,7 @@ const certifications = [
   {
     title: "AWS - Solutions Architecture Simulation",
     issuer: "Amazon Web Services",
-    logo: "https://cdn.simpleicons.org/amazonaws",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg",
     date: "Jul 2025",
     skills: ["Cloud Architecture Design", "AWS Services"],
     color: "from-orange-500 to-yellow-500",
@@ -34,7 +34,7 @@ const certifications = [
   {
     title: "Deloitte - Cyber Job Simulation",
     issuer: "Forage",
-    logo: "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/deloitte.svg",
+    logo: "https://cdn.simpleicons.org/deloitte",
     date: "Jul 2025",
     skills: ["Cybersecurity", "Threat & Vulnerability Management"],
     color: "from-green-500 to-emerald-500",
