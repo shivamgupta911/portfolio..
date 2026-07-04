@@ -402,11 +402,11 @@ export default function Portfolio() {
                 key={index} 
                 className="group p-6 rounded-2xl bg-[#12121a] border border-[#2a2a3a] hover:border-cyan-500/30 transition-all duration-300"
               >
-                <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${cert.color} flex items-center justify-center mb-4`}>
+                <div className={`w-16 h-16 flex items-center justify-center mb-4`}>
   <img
     src={cert.logo}
     alt={cert.issuer}
-    className="h-10 w-10 object-contain"
+    className="h-14 w-14 object-contain"
   />
 </div>
                 <h3 className="font-semibold text-lg mb-1 group-hover:text-cyan-400 transition-colors">{cert.title}</h3>
