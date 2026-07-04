@@ -50,6 +50,34 @@ const certifications = [
 ]
 
 const experience = [
+
+  { role: "Web Developer Intern",
+    organization: "Zidio Development",
+    period: "Jun 2026 - Present",
+    location: "Remote",
+    description:
+      "Developing responsive web applications using React.js, modern frontend technologies, and industry-standard development practices while collaborating in a remote team.",
+    skills: ["React.js", "Next.js", "Web Development","Web Infrastructure"],
+    logo: "/zidio.png",
+    certificate: "/certificates/zidio-offer-letter.pdf",
+    button: "View Offer Letter",
+  },
+  {
+    role: "AI & Drone Technology Intern",
+    organization: "Flytium Drones",
+    period: "May 2026 - Jun 2026",
+    location: "Hybrid",
+    description:
+      "Worked on AI-powered drone applications and explored intelligent automation, computer vision concepts, and real-world drone technology.",
+    skills: [
+      "Artificial Intelligence",
+      "Computer Vision",
+      "Drone Technology",
+    ],
+    logo: "/flytium.png",
+    certificate: "/certificates/flytium-certificate.pdf",
+    button: "View Certificate",
+  },
   {
     role: "Treasurer",
     organization: "The Editorial Board",
