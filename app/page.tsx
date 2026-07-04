@@ -42,7 +42,7 @@ const certifications = [
   {
     title: "Mastering Generative AI and ChatGPT",
     issuer: "GeeksforGeeks",
-    icon: "/icons/gfg.png",
+     logo: "/gfg.svg",
     date: "Aug 2025",
     skills: ["Prompt Engineering", "Artificial Intelligence", "Machine Learning"],
     color: "from-purple-500 to-pink-500",
