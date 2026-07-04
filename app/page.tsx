@@ -83,7 +83,7 @@ const experience = [
     organization: "The Editorial Board",
     logo: "/EDB.png",
     period: "May 2025 - Present",
-    description: "Contributing to editorial initiatives and content management for university publications.",
+    description: ".",
   },
 ]
 
@@ -268,35 +268,97 @@ export default function Portfolio() {
       </section>
 
       {/* Experience Section */}
-      <section id="experience" className="relative py-24 px-6">
-        <div className="mx-auto max-w-6xl">
-          <div className="flex items-center gap-3 mb-12">
-            <div className="p-2.5 rounded-xl bg-gradient-to-br from-cyan-500/20 to-blue-500/20 border border-cyan-500/30">
-              <Briefcase className="h-5 w-5 text-cyan-400" />
+  <section id="experience" className="relative py-24 px-6">
+  <div className="mx-auto max-w-6xl">
+    <div className="flex items-center gap-3 mb-12">
+      <div className="p-2.5 rounded-xl bg-gradient-to-br from-cyan-500/20 to-blue-500/20 border border-cyan-500/30">
+        <Briefcase className="h-5 w-5 text-cyan-400" />
+      </div>
+      <h2 className="text-2xl font-semibold">Professional Experience</h2>
+    </div>
+
+    <div className="space-y-6">
+      {experience.map((exp, index) => (
+        <div
+          key={index}
+          className="group p-8 rounded-2xl bg-[#12121a] border border-[#2a2a3a] hover:border-cyan-500/30 hover:shadow-[0_0_25px_rgba(0,212,255,0.08)] transition-all duration-300"
+        >
+          <div className="flex gap-6">
+
+            {/* Company Logo */}
+            <div className="flex-shrink-0">
+              <img
+                src={exp.logo}
+                alt={exp.organization}
+                className="w-16 h-16 rounded-xl bg-white object-contain p-2 border border-gray-200"
+              />
             </div>
-            <h2 className="text-2xl font-semibold">Experience</h2>
-          </div>
-          <div className="space-y-4">
-            {experience.map((exp, index) => (
-              <div 
-                key={index} 
-                className="p-8 rounded-2xl bg-[#12121a] border border-[#2a2a3a] hover:border-cyan-500/30 transition-all duration-300"
-              >
-                <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4">
-                  <div>
-                    <h3 className="font-semibold text-xl mb-2">{exp.role}</h3>
-                    <p className="text-cyan-400 font-medium">{exp.organization}</p>
-                  </div>
-                  <span className="px-4 py-1.5 rounded-full bg-[#1a1a24] border border-[#2a2a3a] text-sm text-[#8a8a9a] whitespace-nowrap">
-                    {exp.period}
-                  </span>
+
+            {/* Content */}
+            <div className="flex-1">
+
+              <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4">
+
+                <div>
+                  <h3 className="text-2xl font-semibold group-hover:text-cyan-400 transition-colors">
+                    {exp.role}
+                  </h3>
+
+                  <p className="text-cyan-400 font-medium text-lg">
+                    {exp.organization}
+                  </p>
+
+                  {exp.location && (
+                    <p className="text-sm text-[#8a8a9a] mt-1">
+                      📍 {exp.location}
+                    </p>
+                  )}
                 </div>
-                <p className="text-[#a0a0b0] leading-relaxed">{exp.description}</p>
+
+                <span className="px-4 py-2 rounded-full bg-[#1a1a24] border border-[#2a2a3a] text-sm text-[#8a8a9a] whitespace-nowrap">
+                  {exp.period}
+                </span>
+
               </div>
-            ))}
+
+              <p className="mt-6 text-[#a0a0b0] leading-relaxed">
+                {exp.description}
+              </p>
+
+              {/* Skills */}
+              {exp.skills && (
+                <div className="flex flex-wrap gap-2 mt-5">
+                  {exp.skills.map((skill) => (
+                    <span
+                      key={skill}
+                      className="px-3 py-1.5 rounded-lg bg-[#1a1a24] border border-[#2a2a3a] text-sm text-[#d0d0e0] hover:border-cyan-500/30 hover:text-cyan-400 transition-all"
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              )}
+
+              {/* Certificate Button */}
+              {exp.certificate && (
+                <a
+                  href={exp.certificate}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 mt-6 px-4 py-2 rounded-lg bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 hover:bg-cyan-500/20 transition-all"
+                >
+                  <ExternalLink className="h-4 w-4" />
+                  {exp.button}
+                </a>
+              )}
+
+            </div>
           </div>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
 
       {/* Open Source Contributions Section */}
       <section id="projects" className="relative py-24 px-6">
