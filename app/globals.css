@@ -89,3 +89,152 @@
     @apply bg-background text-foreground;
   }
 }
+/* ==========================================================
+   PREMIUM MINIMAL ANIMATIONS
+========================================================== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: rgba(0, 212, 255, .25);
+  color: white;
+}
+
+/* ---------------- HERO FADE ---------------- */
+
+@keyframes heroFade {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-hero {
+  animation: heroFade .8s ease forwards;
+}
+
+/* ---------------- FLOATING GLOW ---------------- */
+
+@keyframes floatGlow {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-22px);
+  }
+}
+
+.animate-float {
+  animation: floatGlow 12s ease-in-out infinite;
+}
+
+/* ---------------- CARD ---------------- */
+
+.premium-card {
+
+  transition:
+    transform .35s ease,
+    box-shadow .35s ease,
+    border-color .35s ease;
+
+  will-change: transform;
+}
+
+.premium-card:hover {
+
+  transform: translateY(-6px);
+
+  border-color: rgba(0,212,255,.35);
+
+  box-shadow:
+    0 12px 35px rgba(0,0,0,.35),
+    0 0 25px rgba(0,212,255,.12);
+}
+
+/* ---------------- BUTTON ---------------- */
+
+.premium-btn {
+
+  transition:
+    transform .25s ease,
+    box-shadow .25s ease,
+    background-color .25s ease;
+}
+
+.premium-btn:hover {
+
+  transform: translateY(-2px) scale(1.03);
+
+  box-shadow:
+    0 10px 30px rgba(0,212,255,.20);
+}
+
+/* ---------------- SOCIAL ICON ---------------- */
+
+.social-icon {
+
+  transition:
+    transform .25s ease,
+    color .25s ease;
+}
+
+.social-icon:hover {
+
+  transform: scale(1.15);
+
+}
+
+/* ---------------- IMAGE ---------------- */
+
+.logo-hover {
+
+  transition:
+    transform .35s ease;
+}
+
+.logo-hover:hover {
+
+  transform: scale(1.08);
+
+}
+
+/* ---------------- NAV ---------------- */
+
+.nav-link {
+
+  position: relative;
+}
+
+.nav-link::after {
+
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+
+  bottom: -4px;
+
+  width: 0;
+
+  height: 2px;
+
+  background: #00d4ff;
+
+  transition: width .3s ease;
+}
+
+.nav-link:hover::after {
+
+  width: 100%;
+}
