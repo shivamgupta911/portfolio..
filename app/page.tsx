@@ -33,6 +33,7 @@ const certifications = [
     
     color: "from-orange-500 to-yellow-500",
         certificate: "/aws1.jpg",
+      button: "View certificate",
   },
   {
     title: "Deloitte - Cyber Job Simulation",
@@ -42,6 +43,7 @@ const certifications = [
     skills: ["Cybersecurity", "Threat & Vulnerability Management"],
     color: "from-green-500 to-emerald-500",
         certificate: "/forage.jpg",
+     button: "View certificate",
   },
   {
     title: "Mastering Generative AI and ChatGPT",
@@ -51,6 +53,7 @@ const certifications = [
     skills: ["Prompt Engineering", "Artificial Intelligence", "Machine Learning"],
     color: "from-purple-500 to-pink-500",
     certificate: "/gfgg.jpg",
+     button: "View certificate",
   },
 ]
 
@@ -551,6 +554,17 @@ export default function Portfolio() {
                     </span>
                   ))}
                 </div>
+                {cert.certificate && (
+  <a
+    href={cert.certificate}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 hover:bg-cyan-500/20 hover:border-cyan-400 transition-all duration-300"
+  >
+    <ExternalLink className="h-4 w-4" />
+    {cert.button}
+  </a>
+)}
               </div>
             ))}
           </div>
