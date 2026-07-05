@@ -138,7 +138,7 @@ export default function Portfolio() {
       <section className="relative pt-32 pb-24 px-6">
         <div className="mx-auto max-w-6xl">
           <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-12">
-            <div className="max-w-2xl">
+            <div className="max-w-2xl animate-hero">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-sm mb-8">
                 <span className="relative flex h-2 w-2">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
