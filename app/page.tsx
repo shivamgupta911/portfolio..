@@ -253,14 +253,14 @@ export default function Portfolio() {
           <div className="grid md:grid-cols-2 gap-6">
             <div className="p-8 rounded-2xl bg-[#12121a] border border-[#2a2a3a] hover:border-cyan-500/30 transition-all duration-300">
               <p className="text-[#a0a0b0] leading-relaxed text-lg">
-                I&apos;m a Aspiring software Developer passionate about creating elegant solutions to complex problems. 
-                My work spans across full-stack development, with expertise in modern JavaScript frameworks 
-                and a strong foundation in computer science fundamentals.
+                I&apos;m a Aspiring Software Developer Passionate about Creating Elegant Solutions to Complex Problems. 
+                My work spans across full-stack Development, with expertise in modern JavaScript Frameworks 
+                and a Strong foundation in Computer Science fundamentals.
               </p>
             </div>
             <div className="p-8 rounded-2xl bg-[#12121a] border border-[#2a2a3a] hover:border-cyan-500/30 transition-all duration-300">
               <p className="text-[#a0a0b0] leading-relaxed text-lg">
-                Alongside my academic journey, I serve as an Executive Member of The Editorial Board, which helps me develop strong techno-managerial, organizational, and interpersonal skills.
+                Alongside my academic journey, I serve as an Executive Member of The Editorial Board, which helps me Develop Exceptional Techno-Managerial, Organizational, and Interpersonal skills.
               </p>
             </div>
           </div>
