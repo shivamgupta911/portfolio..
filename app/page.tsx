@@ -593,18 +593,23 @@ export default function Portfolio() {
                   <p className="font-medium text-[#d0d0e0] group-hover:text-cyan-400 transition-colors">shivamkgupta911@gmail.com</p>
                 </div>
               </a>
-              <a 
-                href="tel:+918787010548" 
-                className="flex items-center gap-4 p-5 rounded-xl bg-[#1a1a24] border border-[#2a2a3a] hover:border-cyan-500/30 hover:bg-[#1a1a24]/80 transition-all duration-300 group"
-              >
-                <div className="p-3 rounded-xl bg-gradient-to-br from-cyan-500/20 to-blue-500/20">
-                  <Phone className="h-5 w-5 text-cyan-400" />
-                </div>
-                <div>
-                  <p className="text-sm text-[#6a6a7a]">Phone</p>
-                  <p className="font-medium text-[#d0d0e0] group-hover:text-cyan-400 transition-colors">+91 87870 10548</p>
-                </div>
-              </a>
+              <a
+  href="https://wa.me/918787010548"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex items-center gap-4 p-5 rounded-xl bg-[#1a1a24] border border-[#2a2a3a] hover:border-green-500/30 transition-all"
+>
+  <div className="p-3 rounded-xl bg-green-500/10">
+    <FaWhatsapp className="h-5 w-5 text-green-500" />
+  </div>
+
+  <div>
+    <p className="text-sm text-[#6a6a7a]">WhatsApp</p>
+    <p className="font-medium text-[#d0d0e0] group-hover:text-green-400 transition-colors">
+      Chat with me
+    </p>
+  </div>
+</a>
               <a 
                 href="https://github.com/shivamgupta911" 
                 target="_blank" 
@@ -620,7 +625,7 @@ export default function Portfolio() {
                 </div>
               </a>
               <a 
-                href="https://linkedin.com/in/shivam-gupta573b18324" 
+                href="https://linkedin.com/in/shivam2007-" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center gap-4 p-5 rounded-xl bg-[#1a1a24] border border-[#2a2a3a] hover:border-cyan-500/30 hover:bg-[#1a1a24]/80 transition-all duration-300 group"
