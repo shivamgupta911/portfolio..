@@ -113,7 +113,7 @@ export default function Portfolio() {
       </div>
 
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 border-b border-[#2a2a3a] bg-[#0a0a0f]/80 backdrop-blur-xl">
+     <nav className="fixed top-0 left-0 right-0 z-50 border-b border-[#2a2a3a]/70 bg-[#0a0a0f]/75 backdrop-blur-2xl shadow-[0_4px_30px_rgba(0,212,255,0.05)]">
         <div className="mx-auto max-w-6xl px-6 py-4">
           <div className="flex items-center justify-between">
             <span className="text-lg font-bold tracking-tight bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
@@ -124,7 +124,7 @@ export default function Portfolio() {
                 <a 
                   key={item}
                   href={`#${item.toLowerCase()}`} 
-                  className="text-sm text-[#8a8a9a] hover:text-cyan-400 transition-colors duration-300"
+         className="nav-link text-sm text-[#8a8a9a] hover:text-cyan-400 transition-all duration-300"
                 >
                   {item}
                 </a>
