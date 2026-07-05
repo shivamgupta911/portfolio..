@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, Phone, ExternalLink, MapPin, GraduationCap, Briefcase, Award, BookOpen, Code, ChevronRight } from "lucide-react"
+import { Github, Linkedin, Mail, Phone, ExternalLink, MapPin, GraduationCap, Briefcase, Award, BookOpen, Code, ChevronRight,  MessageCircle } from "lucide-react"
 
 const education = [
   {
@@ -594,13 +594,13 @@ export default function Portfolio() {
                 </div>
               </a>
               <a
-  href="https://wa.me/918787010548"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="flex items-center gap-4 p-5 rounded-xl bg-[#1a1a24] border border-[#2a2a3a] hover:border-green-500/30 transition-all"
->
+                 href="https://wa.me/918787010548"
+                target="_blank"
+                rel="noopener noreferrer"
+               className="flex items-center gap-4 p-5 rounded-xl bg-[#1a1a24] border border-[#2a2a3a] hover:border-green-500/30 transition-all"
+                >
   <div className="p-3 rounded-xl bg-green-500/10">
-    <FaWhatsapp className="h-5 w-5 text-green-500" />
+    <MessageCircle className="h-5 w-5 text-green-500" />
   </div>
 
   <div>
