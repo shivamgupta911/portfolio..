@@ -351,9 +351,7 @@ export default function Portfolio() {
   {exp.organization}
 </a>
 
-                  <p className="text-cyan-400 font-medium text-lg">
-                    {exp.organization}
-                  </p>
+                 
 
                   {exp.location && (
                     <p className="text-sm text-[#8a8a9a] mt-1">
