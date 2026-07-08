@@ -88,7 +88,7 @@ const experience = [
   },
   {
     role: "Treasurer",
-    organization: "The Editorial Board, MMMUT GORAKHPUR",
+    organization: "The Editorial Board, MMMUT Gorakhpur",
       website: "https://www.theeditorialboard.in/",
     logo: "/EDB.png",
     period: "May 2025 - Present",
