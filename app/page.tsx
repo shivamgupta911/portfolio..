@@ -89,6 +89,7 @@ const experience = [
   {
     role: "Treasurer",
     organization: "The Editorial Board, MMMUT GORAKHPUR",
+      website: "https://www.theeditorialboard.in/",
     logo: "/EDB.png",
     period: "May 2025 - Present",
     description: "Serving as Treasurer of MMMUT's official publishing body with a Legacy of over five decades after progressing from Executive Member, leading financial operations and organizational initiatives..",
