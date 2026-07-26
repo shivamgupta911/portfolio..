@@ -83,7 +83,7 @@ const experience = [
       "Drone Technology",
     ],
     logo: "/flytium.png",
-    certificate: "/certificates/flytium-certificate.pdf",
+    certificate: "",
     button: "View Certificate",
   },
   {
