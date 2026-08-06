@@ -82,7 +82,7 @@ const experience = [
       "Computer Vision",
       "Drone Technology",
     ],
-    logo: "/flytium.png",
+    logo: "/zidio.png",
     certificate: "/Flytiumdrones.png",
     button: "View Certificate",
   },
