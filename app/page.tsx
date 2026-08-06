@@ -459,110 +459,95 @@ Projects
 
 {projects.map((project,index)=>(
 
-<div
+<div className="space-y-8">
 
-key={index}
+  {projects.map((project, index) => (
 
-className="group overflow-hidden rounded-2xl bg-[#12121a] border border-[#2a2a3a] hover:border-cyan-500/40 transition-all duration-300 hover:shadow-[0_0_35px_rgba(0,212,255,0.12)]"
+    <div
+      key={index}
+      className="group p-8 rounded-2xl bg-[#12121a] border border-[#2a2a3a] hover:border-cyan-500/30 hover:shadow-[0_0_25px_rgba(0,212,255,0.08)] transition-all duration-300"
+    >
 
->
+      <div className="flex flex-col lg:flex-row gap-8 items-center lg:items-start">
 
-<img
+        {/* Project Logo */}
 
-src={project.logo}
+        <div className="flex-shrink-0">
+          <img
+            src={project.logo}
+            alt={project.title}
+            className="w-64 h-40 object-contain rounded-xl bg-white p-4"
+          />
+        </div>
 
-alt={project.title}
+        {/* Project Details */}
 
-className="w-full h-80 object-cover rounded-t-2xl"
+        <div className="flex-1">
 
-/>
+          <h3 className="text-2xl font-semibold group-hover:text-cyan-400 transition-colors">
+            {project.title}
+          </h3>
 
-<div className="p-6">
+          <p className="text-cyan-400 font-medium mt-2">
+            {project.subtitle}
+          </p>
 
-<h3 className="text-2xl font-semibold group-hover:text-cyan-400 transition-colors">
+          <p className="mt-5 text-[#a0a0b0] leading-relaxed">
+            {project.description}
+          </p>
 
-{project.title}
+          {/* Tech Stack */}
 
-</h3>
+          <div className="flex flex-wrap gap-2 mt-6">
 
-<p className="text-cyan-400 text-sm mt-1 mb-5">
+            {project.technologies.map((tech) => (
 
-{project.subtitle}
+              <span
+                key={tech}
+                className="px-3 py-1 rounded-lg bg-[#1a1a24] border border-[#2a2a3a] text-sm text-[#d0d0e0]"
+              >
+                {tech}
+              </span>
 
-</p>
+            ))}
 
-<p className="text-[#a0a0b0] leading-relaxed">
+          </div>
 
-{project.description}
+          {/* Buttons */}
 
-</p>
+          <div className="flex flex-wrap gap-4 mt-8">
 
-<div className="flex flex-wrap gap-2 mt-6">
+            <a
+              href={project.live}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-cyan-500 text-black font-semibold hover:bg-cyan-400 transition-all duration-300"
+            >
+              <ExternalLink className="h-4 w-4" />
+              Live Demo
+            </a>
 
-{project.technologies.map((tech)=>(
+            <a
+              href={project.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-5 py-3 rounded-xl border border-cyan-500 text-cyan-400 hover:bg-cyan-500/10 transition-all duration-300"
+            >
+              <Github className="h-4 w-4" />
+              GitHub
+            </a>
 
-<span
+          </div>
 
-key={tech}
+        </div>
 
-className="px-3 py-1 rounded-lg text-xs bg-[#1a1a24] border border-[#2a2a3a] text-[#d0d0e0]"
+      </div>
 
->
+    </div>
 
-{tech}
-
-</span>
-
-))}
-
-</div>
-
-<div className="flex gap-4 mt-8">
-
-<a
-
-href={project.live}
-
-target="_blank"
-
-rel="noopener noreferrer"
-
-className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-cyan-500 text-black font-semibold hover:bg-cyan-400 transition-all duration-300"
-
->
-
-<ExternalLink className="h-4 w-4"/>
-
-Live Demo
-
-</a>
-
-<a
-
-href={project.github}
-
-target="_blank"
-
-rel="noopener noreferrer"
-
-className="inline-flex items-center gap-2 px-5 py-3 rounded-xl border border-cyan-500 text-cyan-400 hover:bg-cyan-500/10 transition-all duration-300"
-
->
-
-<Github className="h-4 w-4"/>
-
-GitHub
-
-</a>
+  ))}
 
 </div>
-
-</div>
-
-</div>
-
-))}
-
 </div>
 
 </div>
