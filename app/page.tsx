@@ -434,6 +434,141 @@ export default function Portfolio() {
   </div>
 </section>
 
+
+      {/* ================= Projects Section ================= */}
+
+<section id="projects" className="relative py-24 px-6">
+
+<div className="mx-auto max-w-6xl">
+
+<div className="flex items-center gap-3 mb-12">
+
+<div className="p-2.5 rounded-xl bg-gradient-to-br from-cyan-500/20 to-blue-500/20 border border-cyan-500/30">
+
+<Code className="h-5 w-5 text-cyan-400" />
+
+</div>
+
+<h2 className="text-2xl font-semibold">
+Projects
+</h2>
+
+</div>
+
+<div className="grid lg:grid-cols-2 gap-8">
+
+{projects.map((project,index)=>(
+
+<div
+
+key={index}
+
+className="group overflow-hidden rounded-2xl bg-[#12121a] border border-[#2a2a3a] hover:border-cyan-500/40 transition-all duration-300 hover:shadow-[0_0_35px_rgba(0,212,255,0.12)]"
+
+>
+
+<img
+
+src={project.logo}
+
+alt={project.title}
+
+className="w-full h-64 object-cover"
+
+/>
+
+<div className="p-6">
+
+<h3 className="text-2xl font-semibold group-hover:text-cyan-400 transition-colors">
+
+{project.title}
+
+</h3>
+
+<p className="text-cyan-400 text-sm mt-1 mb-5">
+
+{project.subtitle}
+
+</p>
+
+<p className="text-[#a0a0b0] leading-relaxed">
+
+{project.description}
+
+</p>
+
+<div className="flex flex-wrap gap-2 mt-6">
+
+{project.technologies.map((tech)=>(
+
+<span
+
+key={tech}
+
+className="px-3 py-1 rounded-lg text-xs bg-[#1a1a24] border border-[#2a2a3a] text-[#d0d0e0]"
+
+>
+
+{tech}
+
+</span>
+
+))}
+
+</div>
+
+<div className="flex gap-4 mt-8">
+
+<a
+
+href={project.live}
+
+target="_blank"
+
+rel="noopener noreferrer"
+
+className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-cyan-500 text-black font-semibold hover:bg-cyan-400 transition-all duration-300"
+
+>
+
+<ExternalLink className="h-4 w-4"/>
+
+Live Demo
+
+</a>
+
+<a
+
+href={project.github}
+
+target="_blank"
+
+rel="noopener noreferrer"
+
+className="inline-flex items-center gap-2 px-5 py-3 rounded-xl border border-cyan-500 text-cyan-400 hover:bg-cyan-500/10 transition-all duration-300"
+
+>
+
+<Github className="h-4 w-4"/>
+
+GitHub
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+))}
+
+</div>
+
+</div>
+
+</section>
+
       {/* Open Source Contributions Section */}
       <section id="opensource" className="relative py-24 px-6">
         <div className="mx-auto max-w-6xl">
