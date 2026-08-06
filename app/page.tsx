@@ -498,7 +498,7 @@ export default function Portfolio() {
 
                   <span
                     key={tech}
-                    className="px-3 py-1 rounded-lg bg-[#1a1a24] border border-[#2a2a3a] text-sm text-[#d0d0e0]"
+                   className="px-3 py-1.5 rounded-xl bg-[#161621] border border-cyan-500/50 text-sm font-medium text-slate-200 shadow-[0_0_10px_rgba(6,182,212,0.18)] hover:border-cyan-300 hover:text-cyan-300 hover:shadow-[0_0_20px_rgba(6,182,212,0.45)] transition-all duration-300"
                   >
                     {tech}
                   </span>
