@@ -100,10 +100,10 @@ const projects = [
     title: "CraveKart",
     subtitle: "Modern Food Ordering Website",
 
-    image: "/cravekart.png",
+    logo: "/cravekart.png",
 
     description:
-      "CraveKart is a responsive food ordering web application inspired by Swiggy. It allows users to browse restaurants, search dynamically, filter restaurants, and enjoy a smooth user experience with shimmer loading and responsive design.",
+      "CraveKart is a Responsive Food ordering Web Application inspired by Swiggy. It allows users to browse restaurants, search dynamically, filter restaurants, and enjoy a smooth user experience with shimmer loading and responsive design.",
 
     technologies: [
       "React",
