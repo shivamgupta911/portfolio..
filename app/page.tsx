@@ -61,7 +61,7 @@ const experience = [
 
   { role: "Web Developer Intern",
     organization: "Zidio Development",
-    period: "Jun 2026 - Present",
+    period: "Jun 2026 - July 2026",
     location: "Remote",
     description:
       "Developing responsive web applications using React.js, modern frontend technologies, and industry-standard development practices while collaborating in a remote team.",
