@@ -72,7 +72,7 @@ const experience = [
   },
   {
     role: "AI & Drone Technology Intern",
-    organization: "Flytium Drones",
+    organization: "Flytium ",
     period: "May 2026 - Jun 2026",
     location: "Hybrid",
     description:
