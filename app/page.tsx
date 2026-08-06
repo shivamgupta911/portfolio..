@@ -95,6 +95,31 @@ const experience = [
     description: "Serving as Treasurer of MMMUT's Official Publishing Body with a Legacy spanning Over Five decades after progressing from Executive Member, leading Financial Operations and organizational initiatives..",
   },
 ]
+const projects = [
+  {
+    title: "CraveKart",
+    subtitle: "Modern Food Ordering Website",
+
+    image: "/cravekart.png",
+
+    description:
+      "CraveKart is a responsive food ordering web application inspired by Swiggy. It allows users to browse restaurants, search dynamically, filter restaurants, and enjoy a smooth user experience with shimmer loading and responsive design.",
+
+    technologies: [
+      "React",
+      "JavaScript",
+      "Tailwind CSS",
+      "Vite",
+      "React Router",
+      "Swiggy API",
+      "Shimmer UI"
+    ],
+
+    github: "https://github.com/shivamgupta911/cravekart",
+
+    live: "https://cravekart.vercel.app"
+  }
+];
 
 const openSourceContributions = [
   {
