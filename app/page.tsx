@@ -473,7 +473,7 @@ src={project.logo}
 
 alt={project.title}
 
-className="w-full h-64 object-cover"
+className="w-full h-80 object-cover rounded-t-2xl"
 
 />
 
