@@ -157,7 +157,11 @@ export default function Portfolio() {
               {["About", "Education", "Experience", "Projects", "open source", "Contact"].map((item) => (
                 <a 
                   key={item}
-                  href={`#${item.toLowerCase()}`} 
+                 href={
+  item === "Open Source"
+    ? "#opensource"
+    : `#${item.toLowerCase()}`
+}
          className="nav-link text-sm text-[#8a8a9a] hover:text-cyan-400 transition-all duration-300"
                 >
                   {item}
