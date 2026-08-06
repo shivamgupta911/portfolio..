@@ -154,7 +154,7 @@ export default function Portfolio() {
               Namaste🙏
             </span>
             <div className="hidden md:flex items-center gap-8">
-              {["About", "Education", "Experience", "Projects", "Contact"].map((item) => (
+              {["About", "Education", "Experience", "Projects", "open source", "Contact"].map((item) => (
                 <a 
                   key={item}
                   href={`#${item.toLowerCase()}`} 
