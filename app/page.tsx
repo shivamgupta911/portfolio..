@@ -431,7 +431,7 @@ export default function Portfolio() {
 </section>
 
       {/* Open Source Contributions Section */}
-      <section id="projects" className="relative py-24 px-6">
+      <section id="opensource" className="relative py-24 px-6">
         <div className="mx-auto max-w-6xl">
           <div className="flex items-center gap-3 mb-12">
             <div className="p-2.5 rounded-xl bg-gradient-to-br from-cyan-500/20 to-blue-500/20 border border-cyan-500/30">
