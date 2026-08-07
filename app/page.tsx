@@ -52,7 +52,7 @@ const certifications = [
     date: "Aug 2025",
     skills: ["Prompt Engineering", "Artificial Intelligence", "Machine Learning"],
     color: "from-purple-500 to-pink-500",
-    certificate: "/gfgg.jpg",
+    certificate: "/gfg1.jpeg",
      button: "View certificate",
   },
 ]
