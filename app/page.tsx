@@ -127,7 +127,7 @@ const openSourceContributions = [
     role: "Open Source Contributor",
     period: "October 2024",
     description: "Contributed to open source projects as part of the GirlScript Summer of Code extended program. Collaborated with maintainers and other contributors to improve codebases, fix bugs, and add new features.",
-    tech: ["Open Source", "Git", "Collaboration", "Code Review"]
+    tech: ["Open Source", "Git", "Collaboration", "Code Review"],
     certificate: "/opensource.jpg",
   },
 ]
