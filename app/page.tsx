@@ -585,6 +585,16 @@ export default function Portfolio() {
                     </span>
                   ))}
                 </div>
+                {contribution.certificate && (
+  <a
+    href={contribution.certificate}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center mt-6 px-4 py-2 rounded-lg bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 hover:bg-cyan-500/20 transition-all"
+  >
+    View Certificate
+  </a>
+)}
               </div>
             ))}
           </div>
