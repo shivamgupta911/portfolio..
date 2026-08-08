@@ -126,7 +126,7 @@ const openSourceContributions = [
     title: "GirlScript Summer of Code (GSSoC)",
     role: "Open Source Contributor",
     period: "October 2024",
-    description: "Contributed to open source projects as part of the GirlScript Summer of Code extended program. Collaborated with maintainers and other contributors to improve codebases, fix bugs, and add new features.",
+    description: "Contributed to Open Source Projects as part of the GirlScript Summer of Code extended program. Collaborated with Maintainers and other Contributors to improve codebases, fix bugs, and add new features.",
     tech: ["Open Source", "Git", "Collaboration", "Code Review"],
     certificate: "/opensource.jpg",
   },
@@ -134,8 +134,8 @@ const openSourceContributions = [
 
 const achievements = [
   
-  "Active Contributor to Open Source communities",
-  "Completed multiple Industry Certifications",
+  "Active Contributor to Open Source Communities.",
+  "Completed Multiple Industry Certifications.",
 ]
 
 export default function Portfolio() {
