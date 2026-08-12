@@ -126,7 +126,7 @@ const openSourceContributions = [
     title: "GirlScript Summer of Code (GSSoC)",
     role: "Open Source Contributor",
     period: "October 2024",
-    description: "Contributed to Open Source Projects as part of the GirlScript Summer of Code extended program. Collaborated with Maintainers and other Contributors to improve codebases, fix bugs, and add new features.",
+    description: "Contributed to Open Source Projects as part of the GirlScript Summer of Code extended program.Collaborated with Maintainers and other Contributors to improve codebases, fix bugs, and add new features.",
     tech: ["Open Source", "Git", "Collaboration", "Code Review"],
     certificate: "/opensource.jpg",
   },
@@ -198,7 +198,7 @@ export default function Portfolio() {
                 Aspiring Software Developer
               </p>
               <p className="text-base text-[#6a6a7a] leading-relaxed max-w-lg mb-8">
-                Building responsive web applications with React and Next.js while strengthening problem-solving through DSA. Passionate about AI, cloud technologies, and creating impactful digital experiences.
+                Building responsive web applications with React and Next.js while strengthening problem-solving through DSA. Passionate about AI, Cloud Technologies, and creating impactful digital experiences.
               </p>
               <div className="flex items-center gap-2 text-sm text-[#8a8a9a]">
                 <MapPin className="h-4 w-4 text-cyan-400" />
