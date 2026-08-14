@@ -5,7 +5,7 @@ const education = [
     degree: "B.Tech in Electronics & Communication Engineering",
     institution: "MMMUT, Gorakhpur",
     period: "2024 - 2028",
-    grade: "8.05 CGPA",
+    grade: "8.1 CGPA",
   },
   {
     degree: "Class XII (ISC)",
